@@ -41,5 +41,24 @@
       "enquiryDate": "2023-08-17T18:30:00.000Z",
       "id": 2
     }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "Neeladri Mukherjee",
+      "email": "mukharjeeneel2000@gmail.com",
+      "password": "123456789",
+      "mobile": 7000390671,
+      "id": 1
+    },
+    {
+      "fullname": "Shiva",
+      "email": "Shiva@gmail.com",
+      "password": "123456789",
+      "mobile": 9179495976,
+      "id": 2
+    }
+  ],
+  "tableData":[
+  
   ]
 }

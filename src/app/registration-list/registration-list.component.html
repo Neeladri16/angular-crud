@@ -1,3 +1,17 @@
+<mat-toolbar color="primary">
+
+  <h1>Gym Registraion App</h1>
+  <span class="example-spacer"></span>
+
+  <button routerLink="/list" mat-raised-button color="accent">
+    View Enquiries
+  </button>
+  <button routerLink="/login" class="btn btn-danger mx-2">
+    Logout
+  </button>
+</mat-toolbar>
+
+<div class="container mt-4">
 <div class="d-flex justify-content-between">
     <button routerLink="/register" mat-raised-button color="accent"><i class="fa fa-arrow-left" aria-hidden="true"></i>
         Back
@@ -91,5 +105,5 @@
   
     <mat-paginator [pageSizeOptions]="[10, 25, 100]" aria-label="Select page of users"></mat-paginator>
   </div>
-  
+</div>
   

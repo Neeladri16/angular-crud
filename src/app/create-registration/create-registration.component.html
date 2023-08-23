@@ -1,3 +1,16 @@
+<mat-toolbar color="primary">
+
+  <h1>Gym Registraion App</h1>
+  <span class="example-spacer"></span>
+
+  <button routerLink="/list" mat-raised-button color="accent">
+    View Enquiries
+  </button>
+  <button routerLink="/login" class="btn btn-danger mx-2">
+    Logout
+  </button>
+</mat-toolbar>
+<div class="container mt-4">
 <div class="logo text-center">
   <img width="300" src="assets/gymlogo.png" alt="">
 </div>
@@ -70,7 +83,7 @@
                        {{trainerOpt}}
                     </mat-radio-button>
                 </mat-radio-group>
-                <div>Selected option is: </div>
+                <div>Selected option is: {{this.registerForm.value?.requireTrainer}} </div>
             </div>
             <div class="col-md-6 mt-3">
                 <label id="example-radio-group-label">Gender</label>
@@ -79,7 +92,7 @@
                        {{gender}}
                     </mat-radio-button>
                 </mat-radio-group>
-                <div>Selected gender is: </div>
+                <div>Selected gender is: {{this.registerForm.value?.gender}} </div>
             </div>
             <div class="col-md-6 mt-4">
                 <mat-form-field appearance="outline">
@@ -108,7 +121,7 @@
                        {{beenGym}}
                     </mat-radio-button>
                 </mat-radio-group>
-                <div>Selected option is: </div>
+                <div>Selected option is: {{this.registerForm.value?.haveGymBefore}}</div>
             </div>
             <div class="col-md-6">
                 <mat-form-field appearance="outline">
@@ -123,4 +136,5 @@
         <button *ngIf="!isUpdateActive" (click)="submit()" class="mt-4" mat-raised-button color="accent">Submit</button>
         <button *ngIf="isUpdateActive" (click)="update()" class="mt-4" mat-raised-button color="accent">Update</button>
     </form>
+</div>
 </div>

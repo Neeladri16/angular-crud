@@ -26,13 +26,17 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
 import {MatChipsModule} from '@angular/material/chips';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateRegistrationComponent,
     RegistrationListComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

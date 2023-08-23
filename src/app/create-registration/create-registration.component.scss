@@ -1,7 +1,9 @@
 mat-form-field{
     width: 100%;
 }
-
+mat-toolbar{
+  width: 100%;
+}
 .example-radio-group {
     display: flex;
     flex-direction: column;
@@ -9,6 +11,10 @@ mat-form-field{
     align-items: flex-start;
   }
   
-  .example-radio-button {
+.example-radio-button {
     margin: 5px;
-  }
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
