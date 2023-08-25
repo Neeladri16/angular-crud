@@ -29,7 +29,7 @@ this.loginForm = this.formBuilder.group({
     if(user){
       alert("Login Success!");
       this.loginForm.reset();
-      this.router.navigate(['register']);
+      this.router.navigate(['home']);
     }else{
       alert("user not found!")
     }

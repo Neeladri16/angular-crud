@@ -1,6 +1,15 @@
+<div class="root-container">
 <mat-toolbar color="primary">
 
-  <h1>Gym Registraion App</h1>
+  <h1>Gym Registraion</h1>
+  &nbsp;&nbsp;&nbsp;
+  <button routerLink="/home" mat-raised-button color="accent">
+    Home    
+  </button>&nbsp;&nbsp;&nbsp;
+  <button routerLink="/register" mat-raised-button color="accent">
+    <!-- <i class="fa fa-arrow-left" aria-hidden="true"></i> -->
+    Add Contact
+    </button>
   <span class="example-spacer"></span>
 
   <button routerLink="/list" mat-raised-button color="accent">
@@ -11,7 +20,7 @@
   </button>
 </mat-toolbar>
 
-<div class="container mt-4">
+<div class="container mt-4 pt-3" style="background-color: white;">
 <mat-card *ngIf="userDetail" class="example-card">
     <mat-card-header class="justify-content-center">
       <div mat-card-avatar class="example-header-image"></div>
@@ -72,4 +81,5 @@
       </mat-list>
     </mat-card-content>
   </mat-card>
+</div>
 </div>

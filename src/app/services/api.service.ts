@@ -7,6 +7,7 @@ import { User } from '../models/user.model';
 })
 export class ApiService {
 private baseUrl : string = 'http://localhost:3000/enquiry'
+private tableUrl: string = 'http://localhost:3000/tableData'
   constructor(private http : HttpClient) { }
 
   postRegistration(registerObj: User) {
@@ -27,5 +28,9 @@ private baseUrl : string = 'http://localhost:3000/enquiry'
 
   getRegisteredUserId(id: number) {
     return this.http.get<User>(`${this.baseUrl}/${id}`)
+  }
+
+  getTableData(){
+    return this.http.get<any[]>(`${this.tableUrl}`)
   }
 }

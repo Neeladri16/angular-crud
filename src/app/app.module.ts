@@ -28,6 +28,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatChipsModule} from '@angular/material/chips';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { HomeComponent } from './home/home.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { SignupComponent } from './signup/signup.component';
     RegistrationListComponent,
     UserDetailComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    HomeComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,22 +1,28 @@
+<div class="root-container">
 <mat-toolbar color="primary">
 
-  <h1>Gym Registraion App</h1>
+  <h1 routerLink="/home" style="cursor: pointer;">Gym Registraion</h1>&nbsp;&nbsp;&nbsp;
+  <button routerLink="/home" mat-raised-button color="accent">
+    Home    
+  </button>&nbsp;&nbsp;&nbsp;
+  <button routerLink="/register" mat-raised-button color="accent">
+    <!-- <i class="fa fa-arrow-left" aria-hidden="true"></i> -->
+    Add Contact
+    </button>
   <span class="example-spacer"></span>
 
-  <button routerLink="/list" mat-raised-button color="accent">
+  <!-- <button routerLink="/list" mat-raised-button color="accent">
     View Enquiries
-  </button>
+  </button> -->
+
   <button routerLink="/login" class="btn btn-danger mx-2">
     Logout
   </button>
 </mat-toolbar>
 
-<div class="container mt-4">
+<div class="container mt-4 pt-3" style="background-color: white;">
 <div class="d-flex justify-content-between">
-    <button routerLink="/register" mat-raised-button color="accent"><i class="fa fa-arrow-left" aria-hidden="true"></i>
-        Back
-        to
-        Contact information</button>
+
         
 <mat-form-field appearance="outline">
     <mat-label>Filter</mat-label>
@@ -106,4 +112,4 @@
     <mat-paginator [pageSizeOptions]="[10, 25, 100]" aria-label="Select page of users"></mat-paginator>
   </div>
 </div>
-  
+</div>

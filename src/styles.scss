@@ -23,3 +23,10 @@ $my-theme: mat.define-light-theme(
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.root-container{
+    width: 100vw;
+    height: 100vh;
+    background-image:url('https://www.gymconcepts.com/cdn/shop/articles/Hybridity-in-Practice-at-Eden-Fitness_1000x.jpg?v=1486128791');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
