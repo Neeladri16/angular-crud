@@ -1,7 +1,7 @@
 {
   "enquiry": [
     {
-      "firstName": "John",
+      "firstName": "Johny",
       "lastName": "Doesese",
       "email": "John@Doe.com",
       "mobile": "23424242432",
@@ -158,6 +158,13 @@
       "password": "123456789",
       "mobile": 9179495976,
       "id": 2
+    },
+    {
+      "fullname": "Prachi Rajput",
+      "email": "prachi.rajput@interbiz.com",
+      "password": "prachi07",
+      "mobile": 7000390671,
+      "id": 3
     }
   ],
   "tableData": [

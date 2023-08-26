@@ -9,7 +9,7 @@ import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'home',pathMatch:'full'},
+  {path:'',redirectTo:'login',pathMatch:'full'},
   {path:'login', component:LoginComponent},
   {path:'signup',component:SignupComponent},
   {path:'register',component:CreateRegistrationComponent},
