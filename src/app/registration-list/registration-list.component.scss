@@ -1,3 +1,13 @@
 .example-spacer {
     flex: 1 1 auto;
 }
+mat-toolbar{
+    width: 100%;
+  }
+  .root-container{
+    width: 100vw;
+    height: 100vh;
+    background-image:url('../../assets/istockphoto-1320144030-170667a.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }

@@ -122,26 +122,6 @@
       "haveGymBefore": "Yes",
       "enquiryDate": "2023-08-09T18:30:00.000Z",
       "id": 6
-    },
-    {
-      "firstName": "tdt",
-      "lastName": "fgdg",
-      "email": "sdf@sdfs.dfgg",
-      "mobile": "65464545454",
-      "weight": 33,
-      "height": 34,
-      "bmi": 0.0025951557093425604,
-      "bmiResult": "Underweight",
-      "gender": "Male",
-      "requireTrainer": "Yes",
-      "package": "Quarterly",
-      "important": [
-        "Energy and Endurance",
-        "Building Lean Muscle"
-      ],
-      "haveGymBefore": "Yes",
-      "enquiryDate": "2023-08-08T18:30:00.000Z",
-      "id": 7
     }
   ],
   "signupUsers": [
@@ -165,6 +145,13 @@
       "password": "prachi07",
       "mobile": 7000390671,
       "id": 3
+    },
+    {
+      "fullname": "full name",
+      "email": "mukharjeeneel2000@gmail.com",
+      "password": "123456789",
+      "mobile": 7000390671,
+      "id": 4
     }
   ],
   "tableData": [

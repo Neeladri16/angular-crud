@@ -7,7 +7,7 @@
     left:50%;
     transform: translate(-50%, -50%);
     background: hsla(205, 46%,30% , 1);
-    background: linear-gradient(90deg, hsla(205, 46%,30% , 1) 0%, hsla(260, 29%,36% , 1) 100%);
+    background: linear-gradient(rgb(0, 0, 0) 0%, rgb(34, 65, 94) 100%);
 }
 
 .card  h1,
@@ -20,9 +20,10 @@ label{
 }
 
 .root-container{
-    width: 100vw;
-    height: 100vh;
-    background-image:url('https://www.gymconcepts.com/cdn/shop/articles/Hybridity-in-Practice-at-Eden-Fitness_1000x.jpg?v=1486128791');
+    // width: 100vw;
+    // height: 100vh;
+    background-position: center;
+    background-image:url('../../assets/istockphoto-1320144030-170667a.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }

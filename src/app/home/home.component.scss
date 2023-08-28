@@ -5,14 +5,11 @@ mat-toolbar{
     flex: 1 1 auto;
 } 
 
-.example-spacer {
-  flex: 1 1 auto;
-}
-
 .root-container{
-  width: 100vw;
-  height: 100vh;
-  background-image:url('https://www.gymconcepts.com/cdn/shop/articles/Hybridity-in-Practice-at-Eden-Fitness_1000x.jpg?v=1486128791');
+  // width: 100vw;
+  // height: 100vh;
+  background-position: center;
+  background-image:url('../../assets/istockphoto-1320144030-170667a.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
