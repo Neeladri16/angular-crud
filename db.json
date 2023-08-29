@@ -122,6 +122,26 @@
       "haveGymBefore": "Yes",
       "enquiryDate": "2023-08-09T18:30:00.000Z",
       "id": 6
+    },
+    {
+      "firstName": "rrrrrrrrr",
+      "lastName": "ggggg",
+      "email": "ggg@ggg.ggg",
+      "mobile": "4343434343434",
+      "weight": 55,
+      "height": 55,
+      "bmi": 0.001652892561983471,
+      "bmiResult": "Underweight",
+      "gender": "Male",
+      "requireTrainer": "Yes",
+      "package": "Quarterly",
+      "important": [
+        "Energy and Endurance",
+        "Building Lean Muscle"
+      ],
+      "haveGymBefore": "Yes",
+      "enquiryDate": "2023-08-14T18:30:00.000Z",
+      "id": 7
     }
   ],
   "signupUsers": [

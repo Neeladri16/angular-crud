@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup,FormBuilder} from '@angular/forms'
+import {FormGroup,FormBuilder, FormControl, Validators} from '@angular/forms'
 import { ApiService } from '../services/api.service';
 import {NgToastService} from 'ng-angular-popup'
 import { ActivatedRoute, Router } from '@angular/router';
@@ -11,6 +11,7 @@ import { User } from '../models/user.model';
   styleUrls: ['./create-registration.component.scss']
 })
 export class CreateRegistrationComponent implements OnInit {
+   public showCancel:boolean= false;
    public packages: string[] =["Monthly","Quarterly","Yearly"];
    public genders: string[] = ["Male","Female"];  
    public importantList : string[]=[
@@ -33,23 +34,49 @@ export class CreateRegistrationComponent implements OnInit {
      private router: Router){
 
    }
-  ngOnInit(): void {
-    this.registerForm = this.fb.group({
-      firstName: [''],
-      lastName: [''],
-      email: [''],
-      mobile: [''],
-      weight: [''],
-      height: [''],
-      bmi: [''],
-      bmiResult: [''],
-      gender: [''],
-      requireTrainer: [''],
-      package: [''],
-      important: [''],
-      haveGymBefore: [''],
-      enquiryDate: ['']
-    });
+  // ngOnInit(): void {
+  //   this.registerForm = this.fb.group({
+  //     firstName: [''],
+  //     lastName: [''],
+  //     email: [''],
+  //     mobile: [''],
+  //     weight: [''],
+  //     height: [''],
+  //     bmi: [''],
+  //     bmiResult: [''],
+  //     gender: [''],
+  //     requireTrainer: [''],
+  //     package: [''],
+  //     important: [''],
+  //     haveGymBefore: [''],
+  //     enquiryDate: ['']
+  //   });
+
+    ngOnInit(): void {
+      // console.log("urll",this.router.url.includes("update"));
+      if(this.router.url.includes("update")){
+        this.showCancel= this.router.url.includes("update")
+        // console.log("showCancel",this.showCancel)
+      }else{
+        this.showCancel= this.router.url.includes("update")
+      }
+      this.registerForm = new FormGroup({
+  
+        firstName: new FormControl(null,[Validators.required]),
+        lastName: new FormControl(null,[Validators.required]),
+        email: new FormControl(null,[Validators.required]),
+        mobile: new FormControl(null,[Validators.required]),
+        weight: new FormControl(null,[Validators.required]),
+        height: new FormControl(null,[Validators.required]),
+        bmi: new FormControl(null,[Validators.required]),
+        bmiResult: new FormControl(null,[Validators.required]),
+        gender: new FormControl(null,[Validators.required]),
+        requireTrainer: new FormControl(null,[Validators.required]),
+        package: new FormControl(null,[Validators.required]),
+        important: new FormControl(null,[Validators.required]),
+        haveGymBefore: new FormControl(null,[Validators.required]),
+        enquiryDate: new FormControl(null,[Validators.required])
+      });
 
     this.registerForm.controls['height'].valueChanges.subscribe(res=>{
       this.calculateBmi(res)
@@ -65,7 +92,7 @@ export class CreateRegistrationComponent implements OnInit {
     })
   }
 submit(){
-  // console.log(this.registerForm.value)
+  console.log(this.registerForm)
    this.api.postRegistration(this.registerForm.value)
    .subscribe(res=>{
        this.toastService.success({detail:"SUCCESS", summary:"Enquiry Added", duration:3000});
